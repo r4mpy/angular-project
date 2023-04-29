@@ -1,4 +1,12 @@
 <div>
 <h2>Je suis votre enseignant</h2>
 <h2>La question que j'ai posé est{{question}}</h2>
-<app-etudiant [questiondeMonEnseignant]="question"></app-etudiant>
+<app-etudiant [questiondeMonEnseignant]="question"
+(reponseFinale)="correction($event)"> 
+</app-etudiant> 
+
+<h2>retour enseignant:{{message}}</h2>
+</div>
+
+
+
